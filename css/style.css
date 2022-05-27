@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, 
+    BlinkMacSystemFont, 'Segoe UI', Roboto,
+     Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+     'Helvetica Neue', sans-serif;
+     line-height: 1.4;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+ 
+header {
+    background-color: rgb(30, 30, 167);
+    color: white;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem 1rem;
+}
+header h1 {
+    text-transform: capitalize;
+}
+ header a {
+     color: white;
+     text-transform: capitalize;
+ }
+
+
+ nav {
+     display: flex;
+     flex-direction: row;
+     gap: 1rem;
+     
+ }
+
+ .banner p {
+     width: 60%;
+
+ }
+
+ /* banner */ 
+ .banner {
+     background-image: url(https://images.unsplash.com/photo-1638913662252-70efce1e60a7?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     color: white;
+     text-align: center;
+    
+ } 
+
+ .banner h2 {
+     text-transform: capitalize;
+
+ }
+
+ .banner p {
+     
+     margin: 2rem auto;
+ }
+
+ .blur {
+     background: rgba (88, 104, 192, 0.2);
+     backdrop-filter: blur(8px);
+     padding: 2rem;
+ }
+
+ .banner a {
+     border: 1px solid #999;
+     padding: 0.7rem 1rem;
+     color: #ce0e38;
+     border-radius: 5px;
+ }
+
+ /* about */
+ .about h2 {
+     text-align: center;
+     text-transform: capitalize;
+     padding: 1rem;
+ }
+
+ .grid {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1rem;
+ }
+
+ 
+
+ .card {
+     border: 1px solid #555;
+     text-align: center;
+     box-shadow: 2px 2px 1px #555;
+     border-radius: 8px;
+     
+
+ }
+
+ /*? laptop na d more */
+ @media (min-width: 980px) {
+     .grid{
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+     }
+ }
+     
+ 
+
+
+ /* tablet view */
+
+ @media (min-width: 680px) {
+     header {
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-between;
+     }
+ }
